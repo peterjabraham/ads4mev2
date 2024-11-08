@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MUI Dark Theme Overrides */
+.MuiInputBase-root {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.MuiOutlinedInput-root {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.MuiInputLabel-root {
+  color: #cccccc !important;
+}
+
+.MuiButton-root {
+  text-transform: none !important;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Additional dark theme utilities */
+.bg-paper {
+  background-color: #333333 !important;
+}
+
+.text-primary {
+  color: #ffffff !important;
+}
+
+.text-secondary {
+  color: #cccccc !important;
+}
+
+/* Form field focus states */
+.MuiOutlinedInput-root.Mui-focused {
+  background-color: #404040 !important;
+}
+
+.MuiOutlinedInput-root:hover {
+  background-color: #404040 !important;
+}
+
+/* Dialog/Modal backgrounds */
+.MuiDialog-paper {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* Dropdown/Select menus */
+.MuiMenu-paper {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.MuiMenuItem-root {
+  color: #ffffff !important;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #404040 !important;
+}
+
+/* Toast/Snackbar styling */
+.MuiSnackbar-root {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* Tooltip styling */
+.MuiTooltip-tooltip {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* Make sure links are visible in dark mode */
+a {
+  color: #42a5f5;
+}
+
+a:hover {
+  color: #90caf9;
+}
